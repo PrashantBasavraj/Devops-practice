@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello from Prashant</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .greeting {
+      font-size: 3em;
+      color: #2c3e50;
+      animation: wave 2s infinite alternate, colorChange 4s infinite alternate;
+    }
+
+    @keyframes wave {
+      0%   { transform: rotate(0deg); }
+      25%  { transform: rotate(3deg); }
+      50%  { transform: rotate(-3deg); }
+      75%  { transform: rotate(3deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes colorChange {
+      0%   { color: #2c3e50; }
+      25%  { color: #e74c3c; }
+      50%  { color: #27ae60; }
+      75%  { color: #2980b9; }
+      100% { color: #8e44ad; }
+    }
+  </style>
+</head>
+<body>
+  <div class="greeting">Hello, I am Prashant!</div>
+</body>
+</html>
